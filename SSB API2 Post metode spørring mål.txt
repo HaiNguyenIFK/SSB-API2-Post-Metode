@@ -1,9 +1,149 @@
 let
-    Url = ".......",
+    Url = "https://data.ssb.no/api/pxwebapi/v2/tables/12852/data?lang=no&outputFormat=csv",
 
     Body =
 "
-.....
+{
+  ""selection"": [
+    {
+      ""variableCode"": ""ContentsCode"",
+      ""valueCodes"": [
+        ""Manedslonn""
+      ]
+    },
+    {
+      ""variableCode"": ""Tid"",
+      ""valueCodes"": [
+        ""2022"",
+        ""2023"",
+        ""2024"",
+        ""2025""
+      ]
+    },
+    {
+      ""variableCode"": ""MaaleMetode"",
+      ""valueCodes"": [
+        ""02"",
+        ""01""
+      ]
+    },
+    {
+      ""variableCode"": ""Region"",
+      ""valueCodes"": [
+        ""3101""
+      ],
+      ""codelist"": ""vs_KommunerFastIkkeFast""
+    },
+    {
+      ""variableCode"": ""ArbBostedRegion"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""Kjonn"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""Alder"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""AvtaltVanlig"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    }
+  ],
+  ""placement"": {
+    ""heading"": [
+      ""ContentsCode"",
+      ""Region"",
+      ""Kjonn"",
+      ""Tid""
+    ],
+    ""stub"": [
+      ""Alder"",
+      ""AvtaltVanlig"",
+      ""MaaleMetode"",
+      ""ArbBostedRegion""
+    ]
+  }
+}{
+  ""selection"": [
+    {
+      ""variableCode"": ""ContentsCode"",
+      ""valueCodes"": [
+        ""Manedslonn""
+      ]
+    },
+    {
+      ""variableCode"": ""Tid"",
+      ""valueCodes"": [
+        ""2022"",
+        ""2023"",
+        ""2024"",
+        ""2025""
+      ]
+    },
+    {
+      ""variableCode"": ""MaaleMetode"",
+      ""valueCodes"": [
+        ""02"",
+        ""01""
+      ]
+    },
+    {
+      ""variableCode"": ""Region"",
+      ""valueCodes"": [
+        ""3101""
+      ],
+      ""codelist"": ""vs_KommunerFastIkkeFast""
+    },
+    {
+      ""variableCode"": ""ArbBostedRegion"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""Kjonn"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""Alder"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    },
+    {
+      ""variableCode"": ""AvtaltVanlig"",
+      ""valueCodes"": [
+        ""*""
+      ]
+    }
+  ],
+  ""placement"": {
+    ""heading"": [
+      ""ContentsCode"",
+      ""Region"",
+      ""Kjonn"",
+      ""Tid""
+    ],
+    ""stub"": [
+      ""Alder"",
+      ""AvtaltVanlig"",
+      ""MaaleMetode"",
+      ""ArbBostedRegion""
+    ]
+  }
+}
 
 ",
 
@@ -20,7 +160,7 @@ let
             ),
             [
                 Delimiter = ",",
-                Encoding = 65001,
+                Encoding = 1252,
                 QuoteStyle = QuoteStyle.Csv
             ]
         )
