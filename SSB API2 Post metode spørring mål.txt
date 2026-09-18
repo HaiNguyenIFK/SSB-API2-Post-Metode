@@ -1,5 +1,5 @@
 let
-    Url = ".....&outputFormat=csv&outputFormatParams=UseTexts",
+    Url = ".....&outputFormatParams=UseTexts",
 
     Body =
 "
