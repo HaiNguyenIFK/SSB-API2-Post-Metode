@@ -1,0 +1,28 @@
+let
+    Url = ".......",
+
+    Body =
+"
+.....
+
+",
+
+    Source =
+        Csv.Document(
+            Web.Contents(
+                Url,
+                [
+                    Headers = [
+                        #"Content-Type" = "application/json"
+                    ],
+                    Content = Text.ToBinary(Body)
+                ]
+            ),
+            [
+                Delimiter = ",",
+                Encoding = 65001,
+                QuoteStyle = QuoteStyle.Csv
+            ]
+        )
+in
+    Source
